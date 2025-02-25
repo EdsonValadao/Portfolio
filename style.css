@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Kdam+Thmor+Pro&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Chakra Petch", serif;
+    scroll-behavior: smooth;
+}
+/* Início Cabeçalho */
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 1% 5% 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(25, 25, 25,0.7);
+    align-items: center;
+    position: fixed;
+}
+
+header h1{
+    width: 40%;
+    margin-left: -2em;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+header h1 span{
+    color: aqua;
+    font-weight: 800;
+}
+
+header h1 .fa-solid{
+    color: aqua;
+    font-size: 1.5rem;
+}
+/* Final Cabeçalho */
+
+/* Início do Menú no cabeçalho */
+header nav{
+    width: 60%;
+}
+
+header nav li{
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header nav li:hover{
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+header nav li a:visited{
+    color: inherit;
+}
+
+header nav li a:any-link{
+    color: inherit;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-mobile{
+    display: none;
+    color: aqua;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/* .bar-menu{
+    display: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+} */
+/* Final Menú Cabeçalho */
+
+/* Início da primeira seção: Home */
+.section1-home-container{
+    width: 100%;
+    height: 100vh;
+    padding: 4.5%;
+    background-color: #191919;
+}
+
+.section1-home-contents{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/DEV.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right;   
+}
+
+.section1-home-contents-name{
+    position: absolute;
+    top: 37%;
+}
+
+.section1-home-contents-name h2{
+    color: white;
+    font-size: 4rem;
+}
+
+.section1-home-contents-name h2 span{
+    color: aqua;
+}
+
+.section1-home-contents-name h3{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    font-weight: 1rem;
+    font-style: italic;
+}
+/* Fim da Primeira Seção: Home */
+
+/* Início da Segunda Seção: Sobre */
+.section2-about-container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.section2-about-contents{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-about-image{
+    height: 75%;
+    margin-left: 8em;
+    border: 10px solid;
+    border-color: rgba(0, 102, 102,0.1);
+    border-radius: 10%;
+}
+
+.section2-about-text{
+    width: 30%;
+    color: white;
+    margin-right: 10em;
+}
+
+.section2-about-text h2{
+    color: aqua;
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.section2-about-text p{
+    text-align: justify;
+}
+
+.section2-about-text button{
+    margin-top: 3em;
+    height: 40px;
+    width: 160px;
+    background-color: aqua;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: 0.5s;
+}
+
+.section2-about-text button:hover{
+    background-color: transparent;
+    color: white;
+}
+/* Fim da Segunda Seção: Sobre */
+
+/* Início da Terceira Seção: Projetos*/
+.section3-projects-container{
+    width: 100%;
+    height: 110vh;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3-projects-container h2{
+    color: aqua;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.section3-projects-contents{
+    width: 55%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 2px;
+}
+
+.section3-project{
+    height: 55vh;
+    width: 25vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 50px;
+    animation: 1s;
+}
+
+.section3-project img{
+    width: 90%;
+    margin-top: 15px;
+}
+
+.section3-project:hover{
+    transform: scale(1.1);
+}
+
+.section3-project h3{
+    color: aqua;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section3-project p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+/* Fim da Terceira Seção: Projetos */
+
+/* Início da Quarta Seção: FaleComigo */
+.section4-contact-container{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    color: aqua;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-contact-contents h2{
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.section4-contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    font-size: 5rem;
+    margin-top: 90px;
+}
+
+.contact-linkedin{
+    color: #3366ff;
+    cursor: pointer;
+}
+
+.contact-linkedin:hover{
+    font-size: 7rem;
+}
+
+.contact-whatsapp{
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.contact-whatsapp:hover{
+    font-size: 7rem;
+}
+
+.icon:any-link{
+    color: inherit;
+}
+
+.icon:visited{
+    color: inherit;
+}
+/* Fim da Quarta Seção: FaleComigo */
+
+/* Início do Rodapé */
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #191919;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+/* Fim do Rodapé */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Início da Responsividade*/
+
+/* Início telas até 810px de largura */
+@media(max-width: 810px){
+    /* Início cabeçalho */
+    header{
+        padding-left: 13%;
+    }
+
+    header h1{
+        width: 100dvw;
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        top: 92px;
+        right: -5%;
+        height: 18vh;
+        width: 150px;
+        z-index: 1000;
+        background-color: rgba(25, 25, 25,0.7);
+    }
+
+    header nav li{
+        margin-top: 10px;
+        margin-right: 19px;
+    }
+
+    /* Menú Responsivo */
+    #nav-menu.active #menu{
+        display: block;
+        text-align: end;
+        margin-right: 20px;
+    }
+    
+    #nav-menu{
+        width: 3%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #btn-mobile{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    /* #btn-mobile:hover{
+        .bar-menu{
+            display: block;
+        }
+    } */
+    /* Final Cabeçalho */
+    
+    /* Inicio 1ª Seção */
+    .section1-home-container{
+        height: 83vh;
+    }
+
+    .section1-home-contents{
+        background-position: 0 bottom;
+    }
+    .section1-home-contents-name{
+        position: relative;
+    }
+    /* Fim 1ª Seção */
+
+    /* Início 2ª Seção */
+    .section2-about-container{
+        height: 62vh;
+    }
+
+    .section2-about-image{
+        margin-left: 0;
+        height: 61%;
+    }
+
+    .section2-about-text{
+        margin-right: 0;
+        width: 40%;
+    }
+    /* Fim 2ª Seção */
+
+    /* Início 3ª Seção */
+    .section3-projects-container{
+        height: 96vh;
+    }
+
+    .section3-projects-contents{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section3-project{
+        height: 37vh;
+        width: 60vw;
+    }
+    /* Fim 3ª Seção */
+
+    /* Início 4ª Seção */
+    .section4-contact-container{
+        height: 30vh;
+    }
+    /* Fim 4ª Seção */
+}
+/* Fim telas até 810px de largura */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Inicio Telas até 480px de largura */
+@media(max-width: 480px){
+    header{
+        width: 100%;
+        padding-left: 18%;
+    }
+    
+    .section2-about-container{
+        height: 39vh;
+    }
+
+    .section2-about-contents{
+        width: 96%;
+    }
+
+    .section2-about-image{
+
+        height: 54%;
+    }
+
+    .section2-about-text{
+        width: 53%;
+    }
+
+    .section2-about-text h2{
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+
+    .section2-about-text p{
+        font-size: 1rem;
+    }
+
+    .section3-projects-container{
+        height: 101vh;
+    }
+
+    .section3-projects-contents{
+        width: 69%;
+    }
+
+    .section3-project{
+        width: 69vw;
+        height: 31vh;
+    }
+
+    .section4-contact-container{
+        height: 45vh;
+    }
+
+    .section4-contact-contents h2{
+        text-align: center;
+    }
+}
+/*Telas Telas até 480px de largura*/
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* Inicio telas até 414px */
+@media(max-width: 414px){
+    header h1{
+        font-size: 2rem;
+    }
+    
+    .section1-home-contents-name{
+        top: 26%;
+    }
+
+    .section2-about-container{
+        height: 47vh;
+    }
+
+    .section2-about-container{
+        height: 51vh;
+    }
+
+    .section2-about-contents{
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section2-about-image{
+        height: 35%;
+    }
+
+    .section2-about-text{
+        width: 93%;
+    }
+
+    .section3-projects-container{
+        height: 106vh;
+    }
+    
+    .section3-project{
+        height: 34vh;
+    }
+
+    .section4-contact-container{
+        height: 45vh;
+    }
+
+    .section4-contact-container{
+        text-align: center;
+    }
+}
+/* fim telas até 414px */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Início telas até 412px de largura */
+@media(max-width: 412px){
+    header h1{
+        font-size: 2rem;
+    }
+
+    .section1-home-contents-name{
+        top: 20%;
+    }
+
+    .section1-home-contents{
+        height: 85%;
+    }
+
+    .section2-about-container{
+        height: 67vh;
+    }
+
+    .section2-about-contents{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2-about-text{
+        width: 77%;
+    }
+
+    .section3-projects-container{
+        height: 110vh;
+    }
+
+    .section3-project{
+        height: 36vh;
+        width: 77vw;
+    }
+
+    .section3-projects-contents{
+        width: 76%;
+    }
+
+    .section4-contact-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section4-contact-container{
+        height: 47vh;
+    }
+
+    .section4-contact-contents h2{
+        margin-top: 0;
+        text-align: center;
+    }
+}
+/* Fim telas até 412px de largura */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Início telas até 390px */
+@media(max-width: 390px){
+    .section2-about-container{
+        height: 60vh;
+    }
+    
+    .section3-projects-container{
+        height: 120vh;
+    }
+}
+/* Fim telas até 390px */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Inicio telas até 384px */
+@media(max-width: 384px){
+    .section2-about-container{
+        height: 57vh;
+    }
+}
+/* Fim telas até 384px */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Inicio telas até 375px de largura */
+@media(max-width: 375px){
+    .section1-home-container{
+        height: 100vh;
+    }
+
+    .section2-about-container{
+        height: 73vh;
+    }
+
+    .section2-about-contents{
+        height: 74vh;
+    }
+
+    .section3-projects-container{
+        height: auto;
+    }
+
+    .section3-project{
+        height: auto;
+    }
+
+    .section4-contact-container{
+        height: 57vh;
+    }
+
+    footer{
+        height: auto;
+    }
+}
+/* Fim Telas até 375px */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* Inicio telas até 360px*/
+@media(max-width: 360px){
+    .section2-about-container{
+        height: 61vh;
+    }
+
+    .section2-about-container{
+        height: 69vh;
+    }
+
+    .section3-project{
+        height: 40vh;
+    }
+
+    .section3-projects-container{
+        height: 128vh;
+    }
+
+    .section4-contact-container{
+        height: 52vh;
+    }
+}
+/* Fim telas até 360px */
+
+
