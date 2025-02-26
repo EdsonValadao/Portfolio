@@ -334,10 +334,10 @@ footer{
     #menu{
         display: none;
         position: absolute;
-        top: 92px;
+        top: 108px;
         right: -5%;
-        height: 18vh;
-        width: 150px;
+        height: 15vh;
+        width: 140px;
         z-index: 1000;
         background-color: rgba(25, 25, 25,0.7);
     }
@@ -345,15 +345,13 @@ footer{
     header nav li{
         margin-top: 10px;
         margin-right: 19px;
-        z-index: 1000;
     }
 
     /* Menú Responsivo */
     #nav-menu.active #menu{
         display: block;
         text-align: end;
-        margin-right: 20px;
-        z-index: 1000;
+        margin-right: 61px;
     }
     
     #nav-menu{
@@ -361,7 +359,6 @@ footer{
         display: flex;
         justify-content: end;
         align-items: center;
-        z-index: 1000;
     }
 
     #btn-mobile{
@@ -386,7 +383,6 @@ footer{
     }
     .section1-home-contents-name{
         position: relative;
-        width: 75%;
     }
     /* Fim 1ª Seção */
 
@@ -436,6 +432,12 @@ footer{
     header{
         width: 100%;
         padding-left: 18%;
+    }
+
+    #menu{
+        top: 90px;
+        right: -15%;
+        height: 18vh;
     }
     
     .section2-about-container{
@@ -497,6 +499,7 @@ footer{
     
     .section1-home-contents-name{
         top: 26%;
+        width: 75%;
     }
 
     .section2-about-container{
@@ -605,6 +608,9 @@ footer{
 
 /* Início telas até 390px */
 @media(max-width: 390px){
+    #menu{
+        top: 84px;
+    }
     .section2-about-container{
         height: 60vh;
     }
@@ -619,6 +625,10 @@ footer{
 
 /* Inicio telas até 384px */
 @media(max-width: 384px){
+    #menu{
+        top: 85px;
+        right: -61px;
+    }
     .section2-about-container{
         height: 57vh;
     }
@@ -629,6 +639,10 @@ footer{
 
 /* Inicio telas até 375px de largura */
 @media(max-width: 375px){
+    #menu{
+        top: 70px;
+        height: 157px;
+    }
     .section1-home-container{
         height: 100vh;
     }
@@ -663,6 +677,11 @@ footer{
 
 /* Inicio telas até 360px*/
 @media(max-width: 360px){
+    #menu{
+        top: 76px;
+        right: -17%;
+        height: 21vh;
+    }
     .section2-about-container{
         height: 61vh;
     }
