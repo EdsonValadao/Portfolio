@@ -100,12 +100,13 @@ header nav li a:any-link{
     background-image: url(./img/DEV.png);
     background-repeat: no-repeat;
     background-size: 30%;
-    background-position: right;   
+    background-position: right;
 }
 
 .section1-home-contents-name{
     position: absolute;
     top: 37%;
+    z-index: 0;
 }
 
 .section1-home-contents-name h2{
@@ -344,6 +345,7 @@ footer{
     header nav li{
         margin-top: 10px;
         margin-right: 19px;
+        z-index: 1000;
     }
 
     /* Menú Responsivo */
@@ -351,6 +353,7 @@ footer{
         display: block;
         text-align: end;
         margin-right: 20px;
+        z-index: 1000;
     }
     
     #nav-menu{
@@ -358,6 +361,7 @@ footer{
         display: flex;
         justify-content: end;
         align-items: center;
+        z-index: 1000;
     }
 
     #btn-mobile{
@@ -382,6 +386,7 @@ footer{
     }
     .section1-home-contents-name{
         position: relative;
+        width: 75%;
     }
     /* Fim 1ª Seção */
 
